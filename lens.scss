@@ -1,0 +1,33 @@
+/* Lens Base styles */
+@import 'node_modules/lens/article/nodes/text/text';
+@import 'node_modules/lens/article/nodes/paragraph/paragraph';
+@import 'node_modules/lens/article/nodes/heading/heading';
+@import 'node_modules/lens/article/nodes/list/list';
+@import 'node_modules/lens/article/nodes/image/image';
+@import 'node_modules/lens/article/nodes/codeblock/codeblock';
+@import 'node_modules/lens/article/nodes/cover/cover';
+@import 'node_modules/lens/article/nodes/supplement/supplement';
+@import 'node_modules/lens/article/nodes/box/box';
+@import 'node_modules/lens/article/nodes/citation/citation';
+@import 'node_modules/lens/article/nodes/definition/definition';
+@import 'node_modules/lens/article/nodes/figure/figure';
+@import 'node_modules/lens/article/nodes/html_table/html_table';
+@import 'node_modules/lens/article/nodes/video/video';
+@import 'node_modules/lens/article/nodes/caption/caption';
+@import 'node_modules/lens/article/nodes/contributor/contributor';
+@import 'node_modules/lens/article/nodes/publication_info/publication_info';
+@import 'node_modules/lens/styles/surface';
+@import 'node_modules/lens/styles/reader';
+@import 'node_modules/lens/styles/lens';
+
+
+/* Math styles */
+
+@import 'node_modules/lens/extensions/math/nodes/math_environment/math_environment';
+@import 'node_modules/lens/extensions/math/nodes/proof/proof';
+@import 'node_modules/lens/extensions/math/nodes/formula/formula';
+@import 'node_modules/lens/extensions/math/nodes/enumeration/enumeration';
+@import 'node_modules/lens/extensions/math/nodes/math_environment_reference/math_environment_reference';
+@import 'node_modules/lens/extensions/math/nodes/formula_reference/formula_reference';
+@import 'node_modules/lens/extensions/math/nodes/plain_citation/plain_citation';
+@import 'node_modules/lens/extensions/math/math_panel';
