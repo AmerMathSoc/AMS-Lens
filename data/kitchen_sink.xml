@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.1d1 20130915//EN" "JATS-archivearticle1-mathml3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="en" dtd-version="1.1d1">
+    <front>
+        <journal-meta>
+            <publisher>
+                <publisher-name>American Mathematical Society</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-categories>
+                <subj-group subj-group-type="display-channel">
+                    <subject>Research article</subject>
+                </subj-group>
+            </article-categories>
+            <title-group>
+                <article-title>Kitchen-Sink Sample</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name name-style="western">
+                        <given-names>Mathy McAuthor</given-names>
+                    </name>
+                </contrib>
+                <aff>Institute for Advanced Webby Math</aff>
+            </contrib-group>
+            <abstract>
+                <title>Abstract</title>
+                <p>In this we collect and document all specialties.</p>
+            </abstract>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title>Design for different environment types (#2)</title>
+            <sec>
+                <title>Theorem/Lemma/etc Environments</title>
+                <p>Theorems should have a clearly visible scope (beginning and end). Typically, this is achieved by making the entire body of the theorem italic. Lemmas, Propositions, Corollaries, named theorems, etc., should be typeset similarly to theorems. These environments have disp-level thmplain.</p>
+                <p>Typically, the body of a definition begins on the same line as the title. The title is typeset in bold or smallcaps.</p>
+                <sec disp-level="thmplain" id="ltxid2">
+                    <title>Theorem 1.1 ([<xref rid="DJ08" ref-type="bibr">2</xref>, Theorem 1])</title>
+                    <p content-type="noindent">If <inline-formula content-type="math/tex"><tex-math>m \geq |\ell | - \ell </tex-math></inline-formula>, then all the zeros of <inline-formula content-type="math/tex"><tex-math>f_{k,m}(z)</tex-math></inline-formula> in <inline-formula content-type="math/tex"><tex-math>\mathcal {F}</tex-math></inline-formula> lie on <inline-formula content-type="math/tex"><tex-math>\mathcal {A}</tex-math></inline-formula>.</p>
+                </sec>
+                <p>Theorems can contain multiple paragraphs, display formulas and other block-level content such as lists.</p>
+                <sec disp-level="thmplain" id="ltxid3">
+
+                    <title>Corollary 1.2 (Height estimate for cmc surfaces)</title>
+                    <p content-type="noindent">Let <inline-formula content-type="math/tex"><tex-math>\Sigma </tex-math></inline-formula> be a compact surface having constant mean curvature which is embedded in <inline-formula content-type="math/tex"><tex-math>{\mathbb M}^2(c) \times {\mathbb R}</tex-math></inline-formula> and a graph over <inline-formula content-type="math/tex"><tex-math>{\mathbb M}^2(c) \times \{0\}</tex-math></inline-formula> such that <inline-formula content-type="math/tex"><tex-math>\partial \Sigma \subset {\mathbb M}^2(c) \times \{0\}.</tex-math></inline-formula> Suppose that</p>
+                    <def-list>
+                      <def-item><term>(1)</term> <def><p><inline-formula content-type="math/tex"><tex-math>c \leq 0,</tex-math></inline-formula> <inline-formula content-type="math/tex"><tex-math>H&gt; \sqrt {\frac {\max _\Sigma K_e -c}2},</tex-math></inline-formula> or</p></def></def-item>
+                      <def-item><term>(2)</term> <def><p><inline-formula content-type="math/tex"><tex-math>c&gt;0,</tex-math></inline-formula> <inline-formula content-type="math/tex"><tex-math>\max _\Sigma K_e -c &gt; 0,</tex-math></inline-formula> <inline-formula content-type="math/tex"><tex-math>H&gt; \sqrt {\frac {\max _\Sigma K_e -c}2},</tex-math></inline-formula> or</p></def></def-item>
+                      <def-item><term>(3)</term> <def><p><inline-formula content-type="math/tex"><tex-math>c&gt;0,</tex-math></inline-formula> <inline-formula content-type="math/tex"><tex-math>\max _\Sigma K_e -c \leq 0,</tex-math></inline-formula> <inline-formula content-type="math/tex"><tex-math>H&gt; 0;</tex-math></inline-formula></p></def></def-item>
+                    </def-list>
+                    <p>then</p>
+                    <disp-formula content-type="math/tex">
+                      <tex-math>|h| \leqslant \frac {H}{2H^2+c-\max _\Sigma K_e}.</tex-math>
+                    </disp-formula>
+                </sec>
+                <p>Theorems can have custom titles.</p>
+                <sec disp-level="thmplain" id="ltxid3">
+                    <title>Main Theorem</title>
+                    <p content-type="noindent"/>
+                    <disp-formula content-type="math/tex">
+                      <tex-math>\begin{equation*}
+                \mathcal {J}(I^\lambda )=I^{(\lfloor \lambda -1\rfloor )}\cap \mathcal {J}(\tau ^\lambda )\cap \\
+                \bigcap _{\mathbf {m}\in G}\{f\mid \operatorname {ord}_\mathbf {m}(f)\geq \lfloor \operatorname {ord}_\mathbf {m} (f_2)\lambda -k_\mathbf {m}\rfloor \}
+                \end{equation*}</tex-math>
+                    </disp-formula>
+                    <p content-type="noindent">where <inline-formula content-type="math/tex"><tex-math>k_\mathbf {m}=m_1+m_2+m_3-1+\operatorname {ord}_\mathbf {m}(f_2)-\operatorname {ord}_\mathbf {m}(f_1)</tex-math></inline-formula>.</p>
+                </sec>
+                <p>Theorems should also look good when their body ends with a display formula.</p>
+                <sec disp-level="thmplain" id="ltxid5">
+                    <title>Theorem 2.1 (Howald's Theorem [<xref rid="MR1828466" ref-type="bibr">4</xref>])</title>
+                    <p content-type="noindent">Let <inline-formula content-type="math/tex"><tex-math>I\subseteq \mathbb {C}[x_1,\mathinner {\ldotp \ldotp \ldotp },x_r]</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>P(I)\subseteq \mathbb {R}^r</tex-math></inline-formula> be the Newton polyhedron of <inline-formula content-type="math/tex"><tex-math>I</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>\operatorname {int}(\lambda \cdot P(I))</tex-math></inline-formula> be the interior of the dilated polyhedron, and let <inline-formula content-type="math/tex"><tex-math>\mathbf {1}=(1,\mathinner {\ldotp \ldotp \ldotp },1)\in \mathbb {N}^r</tex-math></inline-formula>. Then, the multiplier ideal <inline-formula content-type="math/tex"><tex-math>\mathcal {J}(I^\lambda )</tex-math></inline-formula> is the monomial ideal</p>
+                    <disp-formula content-type="math/tex">
+                      <tex-math>\begin{equation*}
+             \mathcal {J}(I^\lambda )=(\mathbf {x}^{\mathbf {v}}\mid \mathbf {v}+\mathbf {1}\in \operatorname {int}(\lambda \cdot P(I))).
+            \end{equation*}</tex-math>
+                    </disp-formula>
+                </sec>
+                <p>Lemmas have the same style as theorems.</p>
+                <sec disp-level="thmplain" id="ltxid12">
+                    <title>Lemma 3.2</title>
+                    <p content-type="noindent"><inline-formula content-type="math/tex"><tex-math>I\cdot \mathcal {O}_{X_{\Sigma _1}}</tex-math></inline-formula> has an embedded component exactly when <inline-formula content-type="math/tex"><tex-math>\operatorname {ord}_\mathbf {n}(f_1)\!&lt;\!\operatorname {ord}_\mathbf {n}(f_2)</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>f_1</tex-math></inline-formula> cuts out the embedded curve on the exceptional divisor set-theoretically in this case.</p>
+                </sec>
+            </sec>
+            <sec>
+                <title>Definition Environments</title>
+                <p>Definitions can have a more lightweight design than theorems. It is less important that the scope is clearly shown, e.g., definitions are rendered without italics. Definitions have disp-level thmdefinition. Note that Examples also have disp-level thmdefinition.</p>
+                <p>Typically, the body of a definition begins on the same line as the title. The title is typeset as titles of theorems, in bold or in smallcaps.</p>
+                <sec disp-level="thmdefinition" id="ltxid4">
+                    <title>Definition 1.1</title>
+                    <p content-type="noindent">Let <inline-formula content-type="math/tex"><tex-math>X</tex-math></inline-formula> be a smooth irreducible variety over <inline-formula content-type="math/tex"><tex-math>\mathbb {C}</tex-math></inline-formula>. Let <inline-formula content-type="math/tex"><tex-math>I\subseteq \mathcal {O}_X</tex-math></inline-formula> be a nonzero ideal sheaf and let <inline-formula content-type="math/tex"><tex-math>\lambda &gt;0</tex-math></inline-formula> be a rational number. Fix a log resolution <inline-formula content-type="math/tex"><tex-math>\mu :\widetilde {X}\to X</tex-math></inline-formula> of <inline-formula content-type="math/tex"><tex-math>I</tex-math></inline-formula> and let <inline-formula content-type="math/tex"><tex-math>F</tex-math></inline-formula> be the effective divisor such that <inline-formula content-type="math/tex"><tex-math>I\cdot \mathcal {O}_X=\mathcal {O}_{\widetilde {X}}(-F)</tex-math></inline-formula>. The <italic toggle="yes">multiplier ideal</italic> <inline-formula content-type="math/tex"><tex-math>\mathcal {J}(I^{\lambda })\subseteq \mathcal {O}_X</tex-math></inline-formula> associated to <inline-formula content-type="math/tex"><tex-math>\lambda </tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>I</tex-math></inline-formula> is defined to be</p>
+                    <disp-formula content-type="math/tex">
+                      <tex-math>\begin{equation*}
+             \mathcal {J}(I^{\lambda })=\mu _*\mathcal {O}_{\widetilde {X}}(K_{\widetilde {X}/X}-\lfloor \lambda \cdot F\rfloor ).
+            \end{equation*}</tex-math>
+                    </disp-formula>
+                </sec>
+            </sec>
+            <sec>
+                <title>Remark, etc Environments</title>
+                <p>Remarks, etc can have an even more lightweight visual design than definitions. They have disp-level thmremark</p>
+                <p>Typically, the body of a definition begins on the same line as the title. The title is typeset as titles of theorems, in bold or in smallcaps.</p>
+                <sec disp-level="thmremark" id="ltxid13">
+                    <title>Remark 2.6</title>
+                    <p content-type="noindent">If either <inline-formula content-type="math/tex"><tex-math>r=0</tex-math></inline-formula> or <inline-formula content-type="math/tex"><tex-math>r=1,</tex-math></inline-formula> we get respectively for <inline-formula content-type="math/tex"><tex-math>m=2</tex-math></inline-formula> the following formulae:</p>
+                    <disp-formula content-type="math/tex">
+                    <tex-math> L_{0}(n)=\Delta n=-n(S_1^2-2S_{2} +tr(T_{0} \overline {R}_N))-E^T_0(S_1),</tex-math>
+                    </disp-formula>
+                    <p>
+                      <disp-formula content-type="math/tex">
+                        <tex-math> L_{1}(n)=-n(S_1S_2 +tr(T_{1} \overline {R}_N))-E^T_0(S_2).</tex-math>
+                      </disp-formula>
+                    </p>
+                </sec>
+            </sec>
+        </sec>
+        <sec>
+            <title>Design for Proof environments (#5)</title>
+            <p>Proof environments have clear scope (beginning and end). The beginning is marked with the title (usually the word "Proof.") and the end is marked with the QED symbol (usually an empty square that is flush-right). The body text begins on the same line as the title and ends on the same line as the QED symbol.</p>
+            <sec>
+                <title>Proof.</title>
+                <p>The proof uses the same argument as the proof of Lemma 4.2 in [<xref rid="CR" ref-type="bibr">4</xref>], with the only difference being that in our case <inline-formula content-type="math/tex"><tex-math>S_r</tex-math></inline-formula> is not assumed to be constant on <inline-formula content-type="math/tex"><tex-math>\Sigma .</tex-math></inline-formula></p>
+            </sec>
+            <sec>
+                <title>Proof.</title>
+                <p>Now we study embedded components on <inline-formula content-type="math/tex"><tex-math>X_{\Sigma _1}</tex-math></inline-formula> in order to understand how to build our good toric variety <inline-formula content-type="math/tex"><tex-math>X</tex-math></inline-formula>. Let <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> be the coordinate ring of <inline-formula content-type="math/tex"><tex-math>X_{\rho }</tex-math></inline-formula>. Then</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>\begin{equation*}
+         S=R[(\mathbf {x}^{\mathbf {u}_1-\mathbf {v}_1})^{\pm 1},(\mathbf {x}^{\mathbf {u}_2-\mathbf {v}_2})^{\pm 1},\mathinner {\ldotp \ldotp \ldotp }],
+        \end{equation*}</tex-math>
+                </disp-formula>
+                <p>and <inline-formula content-type="math/tex"><tex-math>IS=(y^{\operatorname {ord}_\mathbf {n}(f_1)}g_1,y^{\operatorname {ord}_\mathbf {n}(f_2)}g_2,\mathinner {\ldotp \ldotp \ldotp })</tex-math></inline-formula> where <inline-formula content-type="math/tex"><tex-math>(g_1,g_2,\mathinner {\ldotp \ldotp \ldotp })</tex-math></inline-formula> is the ideal of the strict transform and <inline-formula content-type="math/tex"><tex-math>(y)</tex-math></inline-formula> is the prime ideal corresponding to the exceptional divisor. We know that the strict transform is smooth and meets the exceptional divisor transversally. In particular, <inline-formula content-type="math/tex"><tex-math>IS</tex-math></inline-formula> is generated by two elements. When we combine this with the fact that we wrote the generators in order of increasing order of vanishing, we have</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>\begin{equation*}
+         IS=(y^{\operatorname {ord}_\mathbf {n}(f_1)}g_1,y^{\operatorname {ord}_\mathbf {n}(f_2)}g_2)=(y)^{\operatorname {ord}_\mathbf {n}(f_1)}\cap (g_1,y^{\operatorname {ord}_\mathbf {n}(f_2)})\cap (g_1,g_2).
+        \end{equation*}</tex-math>
+                </disp-formula>
+                <p>From this calculation, we see that <inline-formula content-type="math/tex"><tex-math>I\cdot \mathcal {O}_{X_{\Sigma _1}}</tex-math></inline-formula> has an embedded component exactly when <inline-formula content-type="math/tex"><tex-math>\operatorname {ord}_\mathbf {n}(f_1)&lt;\operatorname {ord}_\mathbf {n}(f_2)</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>f_1</tex-math></inline-formula> cuts out the embedded curve on the exceptional divisor set-theoretically in this case.</p>
+            </sec>
+            <p>Proofs can contain nested block-level environments (such as Lemmas and Proofs), though that is rare.</p>
+            <sec disp-level="proof">
+              <title>Proof.</title>
+              <p>Let us suppose by absurdity that <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> is a properly embedded SWET surface with finite topology and one end with respect to a function <inline-formula content-type="math/tex"><tex-math>f</tex-math></inline-formula> which also satisfies the hypotheses of Theorems <xref rid="ltxid2">1.1</xref>, <xref rid="ltxid7">1.3</xref>.</p>
+              <p>Let us denote by <inline-formula content-type="math/tex"><tex-math>D</tex-math></inline-formula> a constant bigger than <inline-formula content-type="math/tex"><tex-math>\max \{C,d \},</tex-math></inline-formula> where <inline-formula content-type="math/tex"><tex-math>C</tex-math></inline-formula> is the bound for the horizontal height given by Theorem <xref rid="ltxid7">1.3</xref> and <inline-formula content-type="math/tex"><tex-math>d</tex-math></inline-formula> is the horizontal diameter of the sphere of constant mean curvature equal to <inline-formula content-type="math/tex"><tex-math>H_0</tex-math></inline-formula>.</p>
+              <p>Let <inline-formula content-type="math/tex"><tex-math>p</tex-math></inline-formula> denote a point in <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>\gamma </tex-math></inline-formula> a horizontal geodesic containing <inline-formula content-type="math/tex"><tex-math>p</tex-math></inline-formula>. Let <inline-formula content-type="math/tex"><tex-math>p_1,p_2</tex-math></inline-formula> be two points in <inline-formula content-type="math/tex"><tex-math>\gamma </tex-math></inline-formula> such that <inline-formula content-type="math/tex"><tex-math>dist_{{\mathbb H}^2(c)}(p,p_1)=dist_{{\mathbb H}^2(c)}(p_1,p_2)=D,</tex-math></inline-formula> <inline-formula content-type="math/tex"><tex-math>dist_{{\mathbb H}^2(c)}(p,p_2)=2D.</tex-math></inline-formula> Let <inline-formula content-type="math/tex"><tex-math>P_1,P_2 </tex-math></inline-formula> be two vertical totally geodesic planes intersecting orthogonally with <inline-formula content-type="math/tex"><tex-math>\gamma </tex-math></inline-formula> at <inline-formula content-type="math/tex"><tex-math>p_1,p_2</tex-math></inline-formula> respectively.</p>
+              <p>We now use the following variant of the Plane Separation Lemma proved in [<xref rid="NR" ref-type="bibr">13</xref>]. Its proof is exactly the same.</p>
+              <sec disp-level="thmplain" id="ltxid28">
+                <label>Lemma 2.14</label>
+                <p content-type="noindent">Let <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> be a properly embedded SWET annulus in <inline-formula content-type="math/tex"><tex-math>{\mathbb H}^2(c) \times {\mathbb R}.</tex-math></inline-formula> Suppose that <inline-formula content-type="math/tex"><tex-math>f \geq H_0 &gt; \frac {\sqrt {-c}}2.</tex-math></inline-formula> Let <inline-formula content-type="math/tex"><tex-math>P_1</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>P_2</tex-math></inline-formula> be two vertical totally geodesic planes. Assume that the distance between <inline-formula content-type="math/tex"><tex-math>P_1</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>P_2</tex-math></inline-formula> is bigger than the horizontal diameter of the sphere of constant mean curvature <inline-formula content-type="math/tex"><tex-math>H_0.</tex-math></inline-formula> Denote by <inline-formula content-type="math/tex"><tex-math>P_1^+</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>P_2^+</tex-math></inline-formula> the components of <inline-formula content-type="math/tex"><tex-math>{\mathbb H}^2(c) \times {\mathbb R}\setminus P_j</tex-math></inline-formula> such that <inline-formula content-type="math/tex"><tex-math>P_1^+ \cap P_2^+ =\emptyset </tex-math></inline-formula>. Then all the connected components of <inline-formula content-type="math/tex"><tex-math>S \cap P_1^+</tex-math></inline-formula> or <inline-formula content-type="math/tex"><tex-math>S \cap P_2^+</tex-math></inline-formula> are compact.</p>
+              </sec>
+              <p>The distance between <inline-formula content-type="math/tex"><tex-math>P_1</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>P_2</tex-math></inline-formula> equals <inline-formula content-type="math/tex"><tex-math>D&gt;d</tex-math></inline-formula>; then the previous lemma applies. Suppose that all of the connected components of <inline-formula content-type="math/tex"><tex-math>S \cap P_1^+</tex-math></inline-formula> are compact. By construction the plane <inline-formula content-type="math/tex"><tex-math>P_1</tex-math></inline-formula> is at distance <inline-formula content-type="math/tex"><tex-math>D</tex-math></inline-formula> to the point <inline-formula content-type="math/tex"><tex-math>p \in S \cap P_1^+.</tex-math></inline-formula> As <inline-formula content-type="math/tex"><tex-math>D&gt;C,</tex-math></inline-formula> <inline-formula content-type="math/tex"><tex-math>C</tex-math></inline-formula> being the bound for the horizontal distance, this would contradict Theorem <xref rid="ltxid7">1.3</xref>. Then all the connected components of <inline-formula content-type="math/tex"><tex-math>S \cap P_2^+</tex-math></inline-formula> are compact. By Theorem <xref rid="ltxid7">1.3</xref> the points of <inline-formula content-type="math/tex"><tex-math>S \cap P_2^+</tex-math></inline-formula> are at a distance to <inline-formula content-type="math/tex"><tex-math>P_2</tex-math></inline-formula> which has to be smaller than <inline-formula content-type="math/tex"><tex-math>C.</tex-math></inline-formula></p>
+              <p>If we use the same argument after replacing <inline-formula content-type="math/tex"><tex-math>\gamma </tex-math></inline-formula> by every other horizontal geodesic line passing by <inline-formula content-type="math/tex"><tex-math>p</tex-math></inline-formula>, we can prove that <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> is located at finite distance to <inline-formula content-type="math/tex"><tex-math>\{p\} \times {\mathbb R}.</tex-math></inline-formula> In other words, <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> is contained in a vertical cylinder.</p>
+              <p>As by hypothesis <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> has exactly one end, we can assume that <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> is contained in the halfspace <inline-formula content-type="math/tex"><tex-math>\{t \leq 0\}</tex-math></inline-formula> and is tangent to <inline-formula content-type="math/tex"><tex-math>\{t=0 \}.</tex-math></inline-formula></p>
+              <p>For <inline-formula content-type="math/tex"><tex-math>z&lt;0</tex-math></inline-formula> we consider the reflection in <inline-formula content-type="math/tex"><tex-math>\{t=z \}</tex-math></inline-formula> of the compact piece <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> of <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> contained in <inline-formula content-type="math/tex"><tex-math>\{z \leq t \leq 0\}.</tex-math></inline-formula> We will show that <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> is a vertical graph on <inline-formula content-type="math/tex"><tex-math>\{t=z \}</tex-math></inline-formula> for any <inline-formula content-type="math/tex"><tex-math>z&lt;0.</tex-math></inline-formula> We denote by <inline-formula content-type="math/tex"><tex-math>S_z^R</tex-math></inline-formula> the reflection of <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> in <inline-formula content-type="math/tex"><tex-math>\{t=z \}.</tex-math></inline-formula> We observe that <inline-formula content-type="math/tex"><tex-math>S_z^R</tex-math></inline-formula> does not have common tangent points with <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula>. Otherwise by the Maximum Principle, Proposition <xref rid="ltxid22">2.11</xref>, we could conclude that <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> is compact. For the same reason <inline-formula content-type="math/tex"><tex-math>S_z^R</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> are not orthogonal to <inline-formula content-type="math/tex"><tex-math>\{t=z \}</tex-math></inline-formula> for any <inline-formula content-type="math/tex"><tex-math>z&lt;0.</tex-math></inline-formula> This proves that <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> is a graph.</p>
+              <p>Now we can choose <inline-formula content-type="math/tex"><tex-math>z_0&lt;0</tex-math></inline-formula> with <inline-formula content-type="math/tex"><tex-math>|z_0|</tex-math></inline-formula> big enough so that the height of the compact graph <inline-formula content-type="math/tex"><tex-math>S_{z_0}</tex-math></inline-formula> (having boundary on the plane <inline-formula content-type="math/tex"><tex-math>\{t =z_0\}</tex-math></inline-formula>) is arbitrarily big. This contradicts Theorem <xref rid="ltxid2">1.1</xref>.</p>
+            </sec>
+
+        </sec>
+        <sec>
+            <title>Display Formulas have too much padding (#6)</title>
+            <p>As display formulas are frequent and can contain very big as well as very small expressions, spacing around display formulas should be kept to a minimum.</p>
+            <sec>
+                <title>Isolated display formulas</title>
+                <p>The multiplier ideal does not depend upon the choice of log resolution. If, in addition, we assume <inline-formula content-type="math/tex"><tex-math>X=\operatorname {Spec}R</tex-math></inline-formula> is affine, we also have the following formula, essentially due to Lipman [<xref rid="MR1306018" ref-type="bibr">7</xref>]:</p>
+                <disp-formula content-type="math/tex">
+                    <tex-math>\begin{equation}
+      \mathcal {J}(I^{\lambda })=\bigcap _{\nu }\{f\in R\mid \nu (f)\geq \lfloor \nu (\mathfrak {a})\lambda -\nu (J_{R_{\nu }/R})\rfloor \}, \tag{1}\cssId{Lipman}{}
+    \end{equation}</tex-math>
+                </disp-formula>
+                <p>In this work we will consider special Weingarten surfaces of elliptic type in <inline-formula content-type="math/tex"><tex-math>{\mathbb M}^2(c) \times {\mathbb R}.</tex-math></inline-formula> Here <inline-formula content-type="math/tex"><tex-math>{\mathbb M}^2(c)={\mathbb S}^2(c),{\mathbb R}^2</tex-math></inline-formula> or <inline-formula content-type="math/tex"><tex-math>{\mathbb H}^2(c)</tex-math></inline-formula> depending on the sign of the sectional curvature <inline-formula content-type="math/tex"><tex-math>c.</tex-math></inline-formula> If <inline-formula content-type="math/tex"><tex-math>H</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>K_e</tex-math></inline-formula> denote the mean curvature and the extrinsic Gauss curvature of a surface <inline-formula content-type="math/tex"><tex-math>\Sigma </tex-math></inline-formula> respectively, then <inline-formula content-type="math/tex"><tex-math>\Sigma </tex-math></inline-formula> is called a special Weingarten surface if the following identity holds:</p>
+                <disp-formula content-type="math/tex">
+                    <tex-math>\begin{equation}
+      H=f(H^2-K_e), \tag{1}\cssId{eq.intro}{}
+    \end{equation}</tex-math>
+                </disp-formula>
+                <p>with <inline-formula content-type="math/tex"><tex-math>f\in {\mathcal C}^0([0,+\infty )).</tex-math></inline-formula> Furthermore if <inline-formula content-type="math/tex"><tex-math>f\in {\mathcal C}^1([0,+\infty ))</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>4x(f'(x))^2&lt;1 \, \forall x\in [0,+\infty ), </tex-math></inline-formula> then <inline-formula content-type="math/tex"><tex-math>f</tex-math></inline-formula> is said to be elliptic and <inline-formula content-type="math/tex"><tex-math>\Sigma </tex-math></inline-formula> is said to be a special Weingarten surface of elliptic type, henceforth called a SWET surface.</p>
+            </sec>
+            <sec>
+                <title>Big expressions in display formulas</title>
+                <sec disp-level="thmdefinition" id="ltxid3">
+                    <title>Definition 2.1</title>
+                    <p content-type="noindent">We say that the bilinear operator with kernel <inline-formula content-type="math/tex"><tex-math>K</tex-math></inline-formula> satisfies the bilinear geometric Hörmander conditions (BGHC) if there exists a fixed constant <inline-formula content-type="math/tex"><tex-math>B</tex-math></inline-formula> such that and for any two families of disjoint dyadic cubes <inline-formula content-type="math/tex"><tex-math>D_1</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>D_2</tex-math></inline-formula>,</p>
+                    <disp-formula content-type="math/tex">
+                      <tex-math>\begin{equation}
+              \sup _{Q\in D_1}\intop \nolimits _{\mathbb R^n} \, \sup _{y\in Q} \intop \nolimits _{\mathbb R^n\setminus ( \cup _{R\in D_1}R^*)} |K(x,y,z) -K(x,y_Q,z)|\,dx\, dz \leq B, \tag{2.1}\cssId{bilinearweakhormander1}{}
+            \end{equation}</tex-math>
+                    </disp-formula>
+                    <p><disp-formula content-type="math/tex"><tex-math>\begin{equation}
+              \sup _{P\in D_2} \intop \nolimits _{\mathbb R^n}\, \sup _{z\in P} \intop \nolimits _{\mathbb R^n\setminus ( \cup _{S\in D_2}S^*)} |K(x,y,z) -K(x,y,z_P)|\,dx\,dy \leq B, \tag{2.2}\cssId{bilinearweakhormander2}{}
+            \end{equation}</tex-math></disp-formula> and</p>
+                    <disp-formula content-type="math/tex">
+                      <tex-math>\begin{equation}
+              \sum _{(P,Q)\in D_1\times D_2}\!\!|P| |Q|\!\sup _{(y,z)\in P\times Q} \, \intop \nolimits _{\mathbb R^n\setminus ( \cup _{R\in D_1}R^\ast ) \cup (\cup _{S\in D_2}S^\ast )} \left |K(x,y,z)-K(x,y_P,z_Q) \right |dx \tag{2.3}\cssId{bilinearweakhormander3}{}
+            \end{equation}</tex-math>
+                    </disp-formula>
+                    <p>
+                      <disp-formula content-type="math/tex">
+                        <tex-math> \le B\left (|\cup _{P\in D_1} P|+ |\cup _{Q\in D_2} Q|\right ). </tex-math>
+                      </disp-formula>
+                    </p>
+                </sec>
+            </sec>
+            <sec>
+                <title>Text bodies with frequent use of display formulas</title>
+                <p>Fix <inline-formula content-type="math/tex"><tex-math>\lambda &gt;0</tex-math></inline-formula>. For <inline-formula content-type="math/tex"><tex-math>f_1</tex-math></inline-formula> we consider the standard Calderón-Zygmund decomposition at level <inline-formula content-type="math/tex"><tex-math>\lambda </tex-math></inline-formula> and obtain a collection of dyadic non-overlapping cubes <inline-formula content-type="math/tex"><tex-math>Q_{ 1,k}</tex-math></inline-formula> that satisfy</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>\lambda &lt;\frac {1}{|Q_{ 1,k}|}\intop \nolimits _{Q_{ 1,k}} |f_1(x)|\, dx\leq 2^n \lambda . </tex-math>
+                </disp-formula>
+                <p>If we set <inline-formula content-type="math/tex"><tex-math>\Omega _1=\bigcup _k Q_{ 1,k}</tex-math></inline-formula>, then</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>|\Omega _1|\leq \frac {C}{\lambda }</tex-math>
+                </disp-formula>
+                <p>and</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>|f_1(x)|\leq \lambda \qquad <roman toggle="no">a.e.</roman>\ x\in \mathbb R^n\setminus \Omega _1.</tex-math>
+                </disp-formula>
+                <p>As usual, we write <inline-formula content-type="math/tex"><tex-math>f_1=g_1+b_1</tex-math></inline-formula>, where <inline-formula content-type="math/tex"><tex-math>g_1</tex-math></inline-formula> is defined by</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>g_1(x)=\left \{\begin{array}{cl}f_1(x),&amp;x\in \mathbb R^n\setminus \Omega _1,\\f_{Q_{ 1,k}},&amp;x\in Q_{ 1,k},\end{array} \right . </tex-math>
+                </disp-formula>
+                <p>and where <inline-formula content-type="math/tex"><tex-math>f_Q=\frac {1}{|Q|}\intop \nolimits _Q f</tex-math></inline-formula>. The “good” function <inline-formula content-type="math/tex"><tex-math>g_1</tex-math></inline-formula> satisfies, for any <inline-formula content-type="math/tex"><tex-math>s\geq 1</tex-math></inline-formula>,</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>\begin{equation}
+         \|g_1\|_{ s}\leq C\lambda ^{1/s'}\|f_1\|_{ 1}^{\frac {1}{2s'}+\frac {1}{s}}\|f_2\|_{ 1}^{-\frac {1}{2s'}}=C\lambda ^{1/s'}, \tag{3.3}\cssId{normag}{}
+        \end{equation}</tex-math>
+                </disp-formula>
+                <p>and <inline-formula content-type="math/tex"><tex-math>b_1</tex-math></inline-formula> is written as</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>b_1(x)=\sum _{k} b_{ 1,k}(x)=\sum _k (f_1(x)-f_{Q_{ 1,k}})\chi _{Q_{ 1,k}}(x).</tex-math>
+                </disp-formula>
+                <p>We do the same for <inline-formula content-type="math/tex"><tex-math>f_2</tex-math></inline-formula>. Via the Calderón-Zygmund decomposition at the same level <inline-formula content-type="math/tex"><tex-math>\lambda </tex-math></inline-formula>, we obtain a collection of of dyadic non-overlapping cubes <inline-formula content-type="math/tex"><tex-math>Q_{ 2,k}</tex-math></inline-formula> with union <inline-formula content-type="math/tex"><tex-math>\Omega _2</tex-math></inline-formula> and analogous decomposition <inline-formula content-type="math/tex"><tex-math>f_2=g_2+b_2</tex-math></inline-formula> with the properties described for <inline-formula content-type="math/tex"><tex-math>f_1</tex-math></inline-formula>. Set</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>\Omega ^\ast = \Omega _1^* \cup \Omega _2^*.</tex-math>
+                </disp-formula>
+            </sec>
+            <sec>
+                <title>Equation Arrays</title>
+                <p>We split the distribution set we are trying to estimate into several parts as follows:</p>
+                <disp-formula content-type="math/tex">
+                    <tex-math>\begin{eqnarray*}
+ |\{x\in \mathbb R^n\,:\,|T(f_1,f_2)(x)|&gt;\lambda ^2\}| &amp;\leq &amp; |\{x \notin {\Omega ^\ast }\,:\,|T(f_1,f_2)(x)|&gt;\lambda ^2\}|+| {\Omega ^\ast }|\\
+ &amp;\leq &amp; |\{x\in \mathbb R^n\,:\,|T(g_1,g_2)(x)|&gt;\lambda ^2/4\}|\\
+ &amp;+&amp;|\{x\in \mathbb R^n\setminus {\Omega ^\ast }\,:\,|T(g_1,b_2)(x)|&gt;\lambda ^2/4\}|\\
+ &amp;+&amp;|\{x\in \mathbb R^n\setminus {\Omega ^\ast }\,:\,|T(b_1,g_2)(x)|&gt;\lambda ^2/4\}|\\
+ &amp;+&amp;|\{x\in \mathbb R^n\setminus {\Omega ^\ast }\,:\,|T(b_1,b_2)(x)|&gt;\lambda ^2/4\}|\\
+ &amp;+&amp;| {\Omega ^\ast }|\\
+ &amp;=&amp;|E_1|+|E_2|+|E_3|+|E_4|+| {\Omega ^\ast }|.
+\end{eqnarray*}</tex-math>
+                </disp-formula>
+            </sec>
+        </sec>
+        <sec>
+            <title>Highlighting of Environments when "active" (#7)</title>
+            <p>Clicking a reference to a block-level environment such as a theorem or defition, should display the referenced environment in the right-hand side pane. Also, the target environment should be highlighted in the body and in the "outline" scroll-bar.</p>
+            <p>Conversely, selecting a block-level envrionment should highlight the places in the text where it is referenced.</p>
+            <sec disp-level="thmplain" id="ltxid8">
+                <title>Theorem 2.4</title>
+                <p content-type="noindent">Let <inline-formula content-type="math/tex"><tex-math>I\subseteq \mathbb {C}[x_1,\mathinner {\ldotp \ldotp \ldotp },x_r]</tex-math></inline-formula> be a prime of height <inline-formula content-type="math/tex"><tex-math>c</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>Z=Z(I)\subseteq X</tex-math></inline-formula> be the subvariety cut out by <inline-formula content-type="math/tex"><tex-math>I</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>\mu :\widetilde {X}\to X</tex-math></inline-formula> be a strong factorizing desingularization of <inline-formula content-type="math/tex"><tex-math>Z</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>\widetilde {Z}</tex-math></inline-formula> be the strict transform of <inline-formula content-type="math/tex"><tex-math>Z</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>\mathcal {L}</tex-math></inline-formula> be the invertible sheaf such that <inline-formula content-type="math/tex"><tex-math>I\cdot \mathcal {O}_{\widetilde {X}}=\mathcal {L}\cdot \mathcal {I}_{\widetilde {Z}}</tex-math></inline-formula> and let <inline-formula content-type="math/tex"><tex-math>\mathfrak {b}=\mu _*\mathcal {L}</tex-math></inline-formula>. Then</p>
+                <disp-formula content-type="math/tex">
+                  <tex-math>\begin{equation*}
+         \mathcal {J}(I^\lambda )=I^{(\lfloor \lambda -c+1\rfloor )}\cap \mathcal {J}(\mathfrak {b}^\lambda ).
+        \end{equation*}</tex-math>
+                </disp-formula>
+            </sec>
+            <p>This paragraph references the preceeding theorem: Theorem <xref rid="ltxid8">2.4</xref>.</p>
+            <p>This paragraph references environments further above: Lemma <xref rid="ltxid12">3.2</xref> and Definition <xref rid="ltxid4">1.1</xref>.</p>
+        </sec>
+        <sec>
+            <title>Support def-lists (#10)</title>
+            <p>def-lists should be rendered properly. They are needed, because the Latex -> XML converter uses def-lists to represent enumerations (ordered lists) with custom counters.</p>
+            <p>The following should be a list with three four items labeled (1) through (4):</p>
+            <def-list>
+              <def-item><term>(1)</term> <def><p><inline-formula content-type="math/tex"><tex-math>E</tex-math></inline-formula> is a divisor with simple normal crossings support.</p></def></def-item>
+              <def-item><term>(2)</term> <def><p>At each step the blowup center is disjoint from the regular locus of the strict transform.</p></def></def-item>
+              <def-item><term>(3)</term> <def><p><inline-formula content-type="math/tex"><tex-math>\widetilde {Z}</tex-math></inline-formula> is smooth and has simple normal crossings with <inline-formula content-type="math/tex"><tex-math>E</tex-math></inline-formula>.</p></def></def-item>
+              <def-item><term>(4)</term> <def><p><inline-formula content-type="math/tex"><tex-math>\cdot \mathcal {O}_{\widetilde {X}}=\mathcal {L}\cdot \_{\widetilde {Z}}</tex-math></inline-formula> where <inline-formula content-type="math/tex"><tex-math>\mathcal {I}_{\widetilde {Z}}</tex-math></inline-formula> is the ideal sheaf of <inline-formula content-type="math/tex"><tex-math>\widetilde {Z}</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>\mathcal {L}=\mathcal {O}_{\widetilde {X}}(-E)</tex-math></inline-formula>.</p></def></def-item>
+            </def-list>
+        </sec>
+    </body>
+</article>
