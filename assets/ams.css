@@ -1,0 +1,38 @@
+/* Publication Info Style overrides */
+
+.article .resources .nodes > .content-node.ams-copyright {
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+/* Cover Node */
+
+.lens-article .content-node.cover .title {
+  padding-top: 5px;
+}
+
+.lens-article .content-node.cover .content .purchaseinfo > a:not(:first-child) {
+  margin-left: 10px;
+}
+
+.lens-article .content-node.cover .content .journalinfo {
+  position: relative;
+}
+
+.lens-article .content-node.cover .content .journalinfo .journalinfo-oa {
+  position:absolute;
+  top: 0;
+  left: 100px;
+}
+
+.lens-article .content-node.cover .content .journalinfo .journalinfo-share {
+  text-align:right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.lens-article .content-node.cover .content .journalinfo .journalinfo-share > * {
+  display:block;
+  font-size: 15px;
+}
