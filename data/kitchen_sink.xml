@@ -19,7 +19,7 @@
             <contrib-group>
                 <contrib contrib-type="author">
                     <name name-style="western">
-                        <given-names>Mathy McAuthor</given-names>
+                        <given-names>Mathy McAuthorsen</given-names>
                     </name>
                 </contrib>
                 <aff>Institute for Advanced Webby Math</aff>
@@ -43,7 +43,7 @@
                 </sec>
                 <p>Theorems can contain multiple paragraphs, display formulas and other block-level content such as lists.</p>
                 <sec disp-level="thmplain" id="ltxid3">
-
+                    
                     <title>Corollary 1.2 (Height estimate for cmc surfaces)</title>
                     <p content-type="noindent">Let <inline-formula content-type="math/tex"><tex-math>\Sigma </tex-math></inline-formula> be a compact surface having constant mean curvature which is embedded in <inline-formula content-type="math/tex"><tex-math>{\mathbb M}^2(c) \times {\mathbb R}</tex-math></inline-formula> and a graph over <inline-formula content-type="math/tex"><tex-math>{\mathbb M}^2(c) \times \{0\}</tex-math></inline-formula> such that <inline-formula content-type="math/tex"><tex-math>\partial \Sigma \subset {\mathbb M}^2(c) \times \{0\}.</tex-math></inline-formula> Suppose that</p>
                     <def-list>
@@ -63,7 +63,7 @@
                     <disp-formula content-type="math/tex">
                       <tex-math>\begin{equation*}
                 \mathcal {J}(I^\lambda )=I^{(\lfloor \lambda -1\rfloor )}\cap \mathcal {J}(\tau ^\lambda )\cap \\
-                \bigcap _{\mathbf {m}\in G}\{f\mid \operatorname {ord}_\mathbf {m}(f)\geq \lfloor \operatorname {ord}_\mathbf {m} (f_2)\lambda -k_\mathbf {m}\rfloor \}
+                \bigcap _{\mathbf {m}\in G}\{f\mid \operatorname {ord}_\mathbf {m}(f)\geq \lfloor \operatorname {ord}_\mathbf {m} (f_2)\lambda -k_\mathbf {m}\rfloor \} 
                 \end{equation*}</tex-math>
                     </disp-formula>
                     <p content-type="noindent">where <inline-formula content-type="math/tex"><tex-math>k_\mathbf {m}=m_1+m_2+m_3-1+\operatorname {ord}_\mathbf {m}(f_2)-\operatorname {ord}_\mathbf {m}(f_1)</tex-math></inline-formula>.</p>
@@ -74,7 +74,7 @@
                     <p content-type="noindent">Let <inline-formula content-type="math/tex"><tex-math>I\subseteq \mathbb {C}[x_1,\mathinner {\ldotp \ldotp \ldotp },x_r]</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>P(I)\subseteq \mathbb {R}^r</tex-math></inline-formula> be the Newton polyhedron of <inline-formula content-type="math/tex"><tex-math>I</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>\operatorname {int}(\lambda \cdot P(I))</tex-math></inline-formula> be the interior of the dilated polyhedron, and let <inline-formula content-type="math/tex"><tex-math>\mathbf {1}=(1,\mathinner {\ldotp \ldotp \ldotp },1)\in \mathbb {N}^r</tex-math></inline-formula>. Then, the multiplier ideal <inline-formula content-type="math/tex"><tex-math>\mathcal {J}(I^\lambda )</tex-math></inline-formula> is the monomial ideal</p>
                     <disp-formula content-type="math/tex">
                       <tex-math>\begin{equation*}
-             \mathcal {J}(I^\lambda )=(\mathbf {x}^{\mathbf {v}}\mid \mathbf {v}+\mathbf {1}\in \operatorname {int}(\lambda \cdot P(I))).
+             \mathcal {J}(I^\lambda )=(\mathbf {x}^{\mathbf {v}}\mid \mathbf {v}+\mathbf {1}\in \operatorname {int}(\lambda \cdot P(I))). 
             \end{equation*}</tex-math>
                     </disp-formula>
                 </sec>
@@ -93,7 +93,7 @@
                     <p content-type="noindent">Let <inline-formula content-type="math/tex"><tex-math>X</tex-math></inline-formula> be a smooth irreducible variety over <inline-formula content-type="math/tex"><tex-math>\mathbb {C}</tex-math></inline-formula>. Let <inline-formula content-type="math/tex"><tex-math>I\subseteq \mathcal {O}_X</tex-math></inline-formula> be a nonzero ideal sheaf and let <inline-formula content-type="math/tex"><tex-math>\lambda &gt;0</tex-math></inline-formula> be a rational number. Fix a log resolution <inline-formula content-type="math/tex"><tex-math>\mu :\widetilde {X}\to X</tex-math></inline-formula> of <inline-formula content-type="math/tex"><tex-math>I</tex-math></inline-formula> and let <inline-formula content-type="math/tex"><tex-math>F</tex-math></inline-formula> be the effective divisor such that <inline-formula content-type="math/tex"><tex-math>I\cdot \mathcal {O}_X=\mathcal {O}_{\widetilde {X}}(-F)</tex-math></inline-formula>. The <italic toggle="yes">multiplier ideal</italic> <inline-formula content-type="math/tex"><tex-math>\mathcal {J}(I^{\lambda })\subseteq \mathcal {O}_X</tex-math></inline-formula> associated to <inline-formula content-type="math/tex"><tex-math>\lambda </tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>I</tex-math></inline-formula> is defined to be</p>
                     <disp-formula content-type="math/tex">
                       <tex-math>\begin{equation*}
-             \mathcal {J}(I^{\lambda })=\mu _*\mathcal {O}_{\widetilde {X}}(K_{\widetilde {X}/X}-\lfloor \lambda \cdot F\rfloor ).
+             \mathcal {J}(I^{\lambda })=\mu _*\mathcal {O}_{\widetilde {X}}(K_{\widetilde {X}/X}-\lfloor \lambda \cdot F\rfloor ). 
             \end{equation*}</tex-math>
                     </disp-formula>
                 </sec>
@@ -128,13 +128,13 @@
                 <p>Now we study embedded components on <inline-formula content-type="math/tex"><tex-math>X_{\Sigma _1}</tex-math></inline-formula> in order to understand how to build our good toric variety <inline-formula content-type="math/tex"><tex-math>X</tex-math></inline-formula>. Let <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> be the coordinate ring of <inline-formula content-type="math/tex"><tex-math>X_{\rho }</tex-math></inline-formula>. Then</p>
                 <disp-formula content-type="math/tex">
                   <tex-math>\begin{equation*}
-         S=R[(\mathbf {x}^{\mathbf {u}_1-\mathbf {v}_1})^{\pm 1},(\mathbf {x}^{\mathbf {u}_2-\mathbf {v}_2})^{\pm 1},\mathinner {\ldotp \ldotp \ldotp }],
+         S=R[(\mathbf {x}^{\mathbf {u}_1-\mathbf {v}_1})^{\pm 1},(\mathbf {x}^{\mathbf {u}_2-\mathbf {v}_2})^{\pm 1},\mathinner {\ldotp \ldotp \ldotp }], 
         \end{equation*}</tex-math>
                 </disp-formula>
                 <p>and <inline-formula content-type="math/tex"><tex-math>IS=(y^{\operatorname {ord}_\mathbf {n}(f_1)}g_1,y^{\operatorname {ord}_\mathbf {n}(f_2)}g_2,\mathinner {\ldotp \ldotp \ldotp })</tex-math></inline-formula> where <inline-formula content-type="math/tex"><tex-math>(g_1,g_2,\mathinner {\ldotp \ldotp \ldotp })</tex-math></inline-formula> is the ideal of the strict transform and <inline-formula content-type="math/tex"><tex-math>(y)</tex-math></inline-formula> is the prime ideal corresponding to the exceptional divisor. We know that the strict transform is smooth and meets the exceptional divisor transversally. In particular, <inline-formula content-type="math/tex"><tex-math>IS</tex-math></inline-formula> is generated by two elements. When we combine this with the fact that we wrote the generators in order of increasing order of vanishing, we have</p>
                 <disp-formula content-type="math/tex">
                   <tex-math>\begin{equation*}
-         IS=(y^{\operatorname {ord}_\mathbf {n}(f_1)}g_1,y^{\operatorname {ord}_\mathbf {n}(f_2)}g_2)=(y)^{\operatorname {ord}_\mathbf {n}(f_1)}\cap (g_1,y^{\operatorname {ord}_\mathbf {n}(f_2)})\cap (g_1,g_2).
+         IS=(y^{\operatorname {ord}_\mathbf {n}(f_1)}g_1,y^{\operatorname {ord}_\mathbf {n}(f_2)}g_2)=(y)^{\operatorname {ord}_\mathbf {n}(f_1)}\cap (g_1,y^{\operatorname {ord}_\mathbf {n}(f_2)})\cap (g_1,g_2). 
         \end{equation*}</tex-math>
                 </disp-formula>
                 <p>From this calculation, we see that <inline-formula content-type="math/tex"><tex-math>I\cdot \mathcal {O}_{X_{\Sigma _1}}</tex-math></inline-formula> has an embedded component exactly when <inline-formula content-type="math/tex"><tex-math>\operatorname {ord}_\mathbf {n}(f_1)&lt;\operatorname {ord}_\mathbf {n}(f_2)</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>f_1</tex-math></inline-formula> cuts out the embedded curve on the exceptional divisor set-theoretically in this case.</p>
@@ -156,7 +156,7 @@
               <p>For <inline-formula content-type="math/tex"><tex-math>z&lt;0</tex-math></inline-formula> we consider the reflection in <inline-formula content-type="math/tex"><tex-math>\{t=z \}</tex-math></inline-formula> of the compact piece <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> of <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> contained in <inline-formula content-type="math/tex"><tex-math>\{z \leq t \leq 0\}.</tex-math></inline-formula> We will show that <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> is a vertical graph on <inline-formula content-type="math/tex"><tex-math>\{t=z \}</tex-math></inline-formula> for any <inline-formula content-type="math/tex"><tex-math>z&lt;0.</tex-math></inline-formula> We denote by <inline-formula content-type="math/tex"><tex-math>S_z^R</tex-math></inline-formula> the reflection of <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> in <inline-formula content-type="math/tex"><tex-math>\{t=z \}.</tex-math></inline-formula> We observe that <inline-formula content-type="math/tex"><tex-math>S_z^R</tex-math></inline-formula> does not have common tangent points with <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula>. Otherwise by the Maximum Principle, Proposition <xref rid="ltxid22">2.11</xref>, we could conclude that <inline-formula content-type="math/tex"><tex-math>S</tex-math></inline-formula> is compact. For the same reason <inline-formula content-type="math/tex"><tex-math>S_z^R</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> are not orthogonal to <inline-formula content-type="math/tex"><tex-math>\{t=z \}</tex-math></inline-formula> for any <inline-formula content-type="math/tex"><tex-math>z&lt;0.</tex-math></inline-formula> This proves that <inline-formula content-type="math/tex"><tex-math>S_z</tex-math></inline-formula> is a graph.</p>
               <p>Now we can choose <inline-formula content-type="math/tex"><tex-math>z_0&lt;0</tex-math></inline-formula> with <inline-formula content-type="math/tex"><tex-math>|z_0|</tex-math></inline-formula> big enough so that the height of the compact graph <inline-formula content-type="math/tex"><tex-math>S_{z_0}</tex-math></inline-formula> (having boundary on the plane <inline-formula content-type="math/tex"><tex-math>\{t =z_0\}</tex-math></inline-formula>) is arbitrarily big. This contradicts Theorem <xref rid="ltxid2">1.1</xref>.</p>
             </sec>
-
+            
         </sec>
         <sec>
             <title>Display Formulas have too much padding (#6)</title>
@@ -246,7 +246,7 @@
  &amp;+&amp;|\{x\in \mathbb R^n\setminus {\Omega ^\ast }\,:\,|T(b_1,g_2)(x)|&gt;\lambda ^2/4\}|\\
  &amp;+&amp;|\{x\in \mathbb R^n\setminus {\Omega ^\ast }\,:\,|T(b_1,b_2)(x)|&gt;\lambda ^2/4\}|\\
  &amp;+&amp;| {\Omega ^\ast }|\\
- &amp;=&amp;|E_1|+|E_2|+|E_3|+|E_4|+| {\Omega ^\ast }|.
+ &amp;=&amp;|E_1|+|E_2|+|E_3|+|E_4|+| {\Omega ^\ast }|. 
 \end{eqnarray*}</tex-math>
                 </disp-formula>
             </sec>
@@ -260,7 +260,7 @@
                 <p content-type="noindent">Let <inline-formula content-type="math/tex"><tex-math>I\subseteq \mathbb {C}[x_1,\mathinner {\ldotp \ldotp \ldotp },x_r]</tex-math></inline-formula> be a prime of height <inline-formula content-type="math/tex"><tex-math>c</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>Z=Z(I)\subseteq X</tex-math></inline-formula> be the subvariety cut out by <inline-formula content-type="math/tex"><tex-math>I</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>\mu :\widetilde {X}\to X</tex-math></inline-formula> be a strong factorizing desingularization of <inline-formula content-type="math/tex"><tex-math>Z</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>\widetilde {Z}</tex-math></inline-formula> be the strict transform of <inline-formula content-type="math/tex"><tex-math>Z</tex-math></inline-formula>, let <inline-formula content-type="math/tex"><tex-math>\mathcal {L}</tex-math></inline-formula> be the invertible sheaf such that <inline-formula content-type="math/tex"><tex-math>I\cdot \mathcal {O}_{\widetilde {X}}=\mathcal {L}\cdot \mathcal {I}_{\widetilde {Z}}</tex-math></inline-formula> and let <inline-formula content-type="math/tex"><tex-math>\mathfrak {b}=\mu _*\mathcal {L}</tex-math></inline-formula>. Then</p>
                 <disp-formula content-type="math/tex">
                   <tex-math>\begin{equation*}
-         \mathcal {J}(I^\lambda )=I^{(\lfloor \lambda -c+1\rfloor )}\cap \mathcal {J}(\mathfrak {b}^\lambda ).
+         \mathcal {J}(I^\lambda )=I^{(\lfloor \lambda -c+1\rfloor )}\cap \mathcal {J}(\mathfrak {b}^\lambda ). 
         \end{equation*}</tex-math>
                 </disp-formula>
             </sec>
@@ -276,7 +276,7 @@
               <def-item><term>(2)</term> <def><p>At each step the blowup center is disjoint from the regular locus of the strict transform.</p></def></def-item>
               <def-item><term>(3)</term> <def><p><inline-formula content-type="math/tex"><tex-math>\widetilde {Z}</tex-math></inline-formula> is smooth and has simple normal crossings with <inline-formula content-type="math/tex"><tex-math>E</tex-math></inline-formula>.</p></def></def-item>
               <def-item><term>(4)</term> <def><p><inline-formula content-type="math/tex"><tex-math>\cdot \mathcal {O}_{\widetilde {X}}=\mathcal {L}\cdot \_{\widetilde {Z}}</tex-math></inline-formula> where <inline-formula content-type="math/tex"><tex-math>\mathcal {I}_{\widetilde {Z}}</tex-math></inline-formula> is the ideal sheaf of <inline-formula content-type="math/tex"><tex-math>\widetilde {Z}</tex-math></inline-formula> and <inline-formula content-type="math/tex"><tex-math>\mathcal {L}=\mathcal {O}_{\widetilde {X}}(-E)</tex-math></inline-formula>.</p></def></def-item>
-            </def-list>
+            </def-list>            
         </sec>
     </body>
 </article>
