@@ -1,5 +1,6 @@
 window.MathJax = {
      jax: ["input/TeX", "input/MathML","output/HTML-CSS"],
+     messageStyle: "none",
      extensions: ["MathMenu.js","MathZoom.js", "CHTML-preview.js"],
      "HTML-CSS": { linebreaks: { automatic: true }, EqnChunk: 9999 },
      SVG: { linebreaks: { automatic: true }, EqnChunk: 9999  },
@@ -7,7 +8,7 @@ window.MathJax = {
        extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
      },
      "displayAlign": "left",
-     "displayIndent": "5em" // TODO will often be article dependent. How do we implemet this?
+     "displayIndent": "5em" // NOTE will usually be optimized per article.
 };
 (function(d, script) {
   script = d.createElement('script');
