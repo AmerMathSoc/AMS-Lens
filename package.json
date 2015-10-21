@@ -1,6 +1,26 @@
 {
-  "name": "lens-ams",
-  "description": "Lens math edition",
+  "name": "ams-lens",
+  "description": "Lens with AMS customizations",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AmerMathSoc/AMS-Lens.git"
+  },
+  "homepage": "https://github.com/AmerMathSoc/AMS-Lens",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/AmerMathSoc/AMS-Lens/issues"
+  },
+  "author": {
+    "name": "American Mathematical Society",
+    "email": "info@ams.org",
+    "url": "http://www.ams.org"
+  },
+  "contributors": [
+    "Michael Aufreiter (https://github.com/michael)",
+    "Oliver Buchtala (https://github.com/oliver----)",
+    "David Jones (https://github.com/davidmjones)",
+    "Peter Krautzberger (https://github.com/pkra)"
+  ],
   "dependencies": {
     "underscore": "1.8.x",
     "express": "3.3.x",
