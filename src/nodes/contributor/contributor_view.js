@@ -115,9 +115,9 @@ AMSContributorView.Prototype = function() {
     // MR if available
     // -------
 
-    if (this.node.properties.mrauth) {
+    if (this.node.mrauth) {
       this.content.appendChild($$('.label', { text: 'MathSciNet' }));
-      this.content.appendChild($$('a.mrauth', { href: this.node.properties.mrauth, text: this.node.properties.mrauth }));
+      this.content.appendChild($$('a.mrauth', { href: this.node.mrauth, text: this.node.mrauth }));
     }
 
     // ORCID if available
