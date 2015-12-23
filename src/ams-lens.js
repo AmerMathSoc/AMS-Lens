@@ -76,6 +76,11 @@ MathConverter.prototype.contributor =  function(state, contrib) {
       contribNode.orcid = orcidURI.textContent;
     }
 
+    var mrAuth = contrib.querySelector("contrib-id[contrib-id-type=mrauth]");
+    if (mrAuth) {
+      contribNode.mrauth = mrAuth.textContent;
+    }
+
     // Extracting equal contributions
     var nameEl = contrib.querySelector("name");
     if (nameEl) {
