@@ -107,10 +107,6 @@ PublicationInfoView.Prototype = function() {
       metaData.appendChild(relatedArticleEl);
     }
 
-    this.altmetricsEl = $$('.altmetrics.container');
-    metaData.appendChild(this.altmetricsEl);
-    this.renderAltmetrics();
-
     var historyEl = this.describePublicationHistory();
 
     metaData.appendChild(historyEl);
@@ -126,27 +122,14 @@ PublicationInfoView.Prototype = function() {
     var articleInfoViewEl = articleInfoView.render().el;
 
     this.content.appendChild(articleInfoViewEl);
-  
+
 
     return this;
   };
 
-  // Render altmetrics data
-  // ----------------
-  // 
-
-  this.renderAltmetrics = function() {
-    var doi = this.node.document.get('publication_info').doi;
-    // doi = "10.1136/bmj.39471.430451.BE";
-
-    // Official Altmetric badge used: http://api.altmetric.com/embeds.html
-    $(this.altmetricsEl).append($('<div class="label">Altmetrics</div>'));
-    $(this.altmetricsEl).append($("<div class='value'><script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><div class='altmetric-embed' data-badge-type='donut' data-condensed='true' data-badge-details='right' data-doi='"+doi+"'></div></div>"));
-  };
-
   // Creates an element with a narrative description of the publication history
   // ----------------
-  // 
+  //
 
   this.describePublicationHistory = function() {
     var datesEl = $$('.dates');
@@ -156,7 +139,7 @@ PublicationInfoView.Prototype = function() {
     if (this.node.history && this.node.history.length > 0) {
       dateEntries = dateEntries.concat(this.node.history);
     }
-    
+
     if (this.node.published_on) {
       dateEntries.push({
         type: 'published',
