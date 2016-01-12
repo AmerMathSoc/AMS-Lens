@@ -5,6 +5,8 @@ window.MathJax = {
      "HTML-CSS": { linebreaks: { automatic: true }, EqnChunk: 100, EqnChunkFactor: 2.5, EqnChunkDelay: 10},
      SVG: { linebreaks: { automatic: true }, EqnChunk: 100, EqnChunkFactor: 2.5, EqnChunkDelay: 10},
      "fast-preview": {disabled: true},
+     showProcessingMessages: false,
+     messageStyle: "none",
     //  extensions: ["[Contrib]/img.js"],
     //  TeX: {extensions: ["AMSmath.js","AMSsymbols.js", "action.js"]},
      "displayAlign": "left",
