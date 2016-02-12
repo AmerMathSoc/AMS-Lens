@@ -3,12 +3,14 @@
 var _ = require('underscore');
 var Lens = require("lens/reader");
 var LensMath = require("lens/extensions/math");
+var util = require("lens/substance/util");
 var MathConverter = LensMath.MathConverter;
 var MathPanel = LensMath.MathPanel;
 var MathNodes = LensMath.MathNodes;
 var panels = Lens.getDefaultPanels();
 var InfoPanel = require("./info_panel");
 var amsNodes = require("./nodes");
+
 
 MathConverter.prototype.contributor =  function(state, contrib) {
     var doc = state.doc;
@@ -30,6 +32,17 @@ MathConverter.prototype.contributor =  function(state, contrib) {
       contribution: "",
       members: []
     };
+
+
+    // Extract emails
+
+    // TODO: a corresp element allows *much* more than just an email
+    // Thus, we are leaving this like untouched, so that it may be grabbed by extractAuthorNotes()
+    // state.used[correspId] = true;
+    var emails = contrib.querySelectorAll("email");
+    _.each(emails, function(email) {
+      contribNode.emails.push(email.textContent);
+    });
 
     // Extract contrib type
     var contribType = contrib.getAttribute("contrib-type");

@@ -43,6 +43,10 @@ AMSContributorView.Prototype = function() {
           aff.country
         ]).join(', ');
 
+        if (aff.specific_use === 'current') {
+          affText += " (current)";
+        }
+
         return $$('.affiliation', {text: affText});
       })
     }));
