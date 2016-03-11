@@ -84,26 +84,11 @@
     </msub>
     <annotation encoding="application/x-tex">\mathbb {Q}_p</annotation>
   </semantics>
-</math><tex-math>\mathbb {Q}_p</tex-math></alternatives></inline-formula>, or as the field <inline-formula content-type="math/tex"><alternatives><math xmlns="http://www.w3.org/1998/Math/MathML">
-  <semantics>
-    <mrow>
-      <mi>F</mi>
-      <mo>=</mo>
-      <msub>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi mathvariant="double-struck">F</mi>
-        </mrow>
-        <mi>q</mi>
-      </msub>
-      <mo stretchy="false">(</mo>
-      <mo stretchy="false">(</mo>
-      <mi>t</mi>
-      <mo stretchy="false">)</mo>
-      <mo stretchy="false">)</mo>
-    </mrow>
-    <annotation encoding="application/x-tex">F=\mathbb {F}_q((t))</annotation>
-  </semantics>
-</math><tex-math>F=\mathbb {F}_q((t))</tex-math></alternatives></inline-formula>. Let <inline-formula content-type="math/tex"><alternatives><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><tex-math>\mathbb {Q}_p</tex-math></alternatives></inline-formula>, or as the field <inline-formula content-type="math/tex"><alternatives><html>
+<span class="MathJax_Preview"></span>
+<span id="MathJax-Element-1-Frame" class="mjx-chtml"><span id="MJXc-Node-1" class="mjx-math" role="math"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span id="MJXc-Node-4" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-5" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-6" class="mjx-texatom"><span id="MJXc-Node-7" class="mjx-mrow"><span id="MJXc-Node-8" class="mjx-mi"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.446em; padding-bottom: 0.298em;">F</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-9" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.446em; padding-right: 0.014em;">q</span></span></span></span><span id="MJXc-Node-10" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-11" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-12" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span id="MJXc-Node-13" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span id="MJXc-Node-14" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span>
+
+</html></alternatives></inline-formula>. Let <inline-formula content-type="math/tex"><alternatives><math xmlns="http://www.w3.org/1998/Math/MathML">
   <semantics>
     <msub>
       <mrow class="MJX-TeXAtom-ORD">
@@ -9471,5 +9456,7 @@
       <p><xref ref-type="fn" rid="ltxid105" alt="Footnote "/> <fn id="ltxid105"><p>This work was supported in part by the NSF.</p></fn> <xref ref-type="fn" rid="ltxid106" alt="Footnote "/> <fn id="ltxid106"><p>This paper is based on lectures at the Fields Institute on June 25–27, 2003. Slides and audio are available at http://www.fields.utoronto.ca/audio/02-03/#CMI_summer_school</p></fn>.</p>
       <p><xref ref-type="fn" rid="ltxid107" alt="Footnote "/> <fn id="ltxid107"><p>Copyright 2003, Thomas C. Hales.</p></fn> <xref ref-type="fn" rid="ltxid108" alt="Footnote "/> <fn id="ltxid108"><p>This work is licensed under the Creative Commons Attribution License. To view a copy of this license, visit http://creativecommons.org/licenses/by/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.</p></fn></p>
     </sec>
+    <back><app-group/>
+  </back>
   </body>
 </article>
