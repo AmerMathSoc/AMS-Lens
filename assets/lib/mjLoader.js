@@ -17,6 +17,17 @@ window.MathJax = {
           script.type = 'text/javascript';
           script.src = 'lens.js';
           document.getElementsByTagName('head')[0].appendChild(script);
+          MathJax.Hub.Register.MessageHook("End Process", function (message) {
+            //HACK clean up bad Lens nodes; cf. https://github.com/AmerMathSoc/AMS-Lens/issues/37
+            var nodes = document.querySelectorAll(".paragraph > .content > .text > .content");
+            for (var i = 0; i < nodes.length; i++){
+              if(nodes[i].innerHTML.trim().length === 0){
+                 var parent = nodes[i].parentNode.parentNode.parentNode;
+                 console.log(parent);
+                 parent.parentNode.removeChild(parent);
+               }
+            }
+          });
       }
 };
 (function(d, script) {
