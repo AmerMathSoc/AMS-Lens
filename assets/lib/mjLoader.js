@@ -28,30 +28,48 @@ window.MathJax = {
                  parent.parentNode.removeChild(parent);
                }
             }
+            // HACK remove padding of formulas following formulas
+            var formulas = document.querySelectorAll(".document .formula + .formula");
+            for (var i = 0; i < formulas.length; i++){
+              var formula = formulas[i];
+              formula.style["padding-top"]= "0px";
+              formula.previousSibling.style["padding-bottom"]= "0px";
+            }
             // shrink with zoom from MathJax.
+            // debounce setup
             var timeout = false;
             var delay = 250;
-            var shrinkMath = function() {
-              var dispFormulas = document.getElementsByClassName("formula");
+            // cache the real widths; it would be nice if MathJax did that
+            var dispForms = document.querySelectorAll(".formula[data-id^='formula']");
+            if (dispForms){
+              for (var i=0; i < dispForms.length; i++){
+                  var dispForm = dispForms[i];
+                  var wrapper = dispForm.getElementsByClassName("MathJax_Preview")[0].nextSibling;
+                  var height = window.getComputedStyle(wrapper).height;
+                  wrapper.setAttribute("data-scale-height", height);
+              }
+            }
+            // the main function for scaling
+            var scaleMath = function() {
+              var dispFormulas = document.querySelectorAll(".formula[data-id^='formula']");
               if (dispFormulas){
                 // caculate relative size of indentation
                 var contentTest = document.getElementsByClassName("content")[0];
                 var nodesWidth = contentTest.offsetWidth;
                 var mathIndent = MathJax.Hub.config.displayIndent; //assuming indent is in px's
                 var mathIndentValue = mathIndent.substring(0,mathIndent.length - 2);
-                for (var i=0; i<dispFormulas.length; i++){
+                for (var i=0; i < dispFormulas.length; i++){
                   var dispFormula = dispFormulas[i];
                   var wrapper = dispFormula.getElementsByClassName("MathJax_Preview")[0].nextSibling;
                   var child = wrapper.firstChild;
                   wrapper.style.transformOrigin = "top left";
                   var oldScale = child.style.transform;
-                  var newValue = Math.min(0.80*dispFormula.offsetWidth / child.offsetWidth,1.0).toFixed(2);
+                  var newValue = Math.min(0.80*dispFormula.offsetWidth / child.offsetWidth,1.0).toFixed(2); //80% from experimentation
                   var newScale = "scale(" + newValue + ")";
                   if(!(newScale === oldScale)){
                     wrapper.style.transform = newScale;
                     wrapper.style["margin-left"]= Math.pow(newValue,4)*mathIndentValue + "px";
-                    var wrapperStyle = window.getComputedStyle(wrapper);
-                    var wrapperHeight = parseFloat(wrapperStyle.height);
+                    var wrapperHeight = parseFloat(wrapper.getAttribute("data-scale-height"));
                     wrapper.style.height = "" + (wrapperHeight * newValue) + "px";
                     if(newValue === "1.00"){
                       wrapper.style.cursor = "";
@@ -64,10 +82,10 @@ window.MathJax = {
                 }
             }
             };
-            shrinkMath();
+            scaleMath();
             window.addEventListener('resize', function() {
               clearTimeout(timeout);
-              timeout = setTimeout(shrinkMath, delay);
+              timeout = setTimeout(scaleMath, delay);
             });
           });
       }
