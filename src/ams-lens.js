@@ -11,6 +11,29 @@ var panels = Lens.getDefaultPanels();
 var InfoPanel = require("./info_panel");
 var amsNodes = require("./nodes");
 
+MathConverter.prototype.extractNotes = function(state, article){
+  var doc = state.doc;
+  var nodes = [];
+  var dedication = article.querySelectorAll("notes[notes-type='dedication']")[0].textContent;
+  if (dedication.length > 0){
+    var p1 = {
+        "type" : "paragraph",
+        "id" : "dedication",
+        "children" : []
+      };
+    var text1 = {
+      "type" : "text",
+      "id" : "dedication-text",
+      "content" : dedication
+    };
+    p1.children.push(text1.id);
+    doc.create(p1);
+    doc.create(text1);
+    nodes.push(p1.id);
+    nodes.push(text1.id);
+  }
+return nodes;
+}
 
 MathConverter.prototype.contributor =  function(state, contrib) {
     var doc = state.doc;
