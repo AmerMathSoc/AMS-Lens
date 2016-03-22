@@ -104,6 +104,13 @@ else if (pubInfo.journal === 'Transactions of the American Mathematical Society,
     // Append
     this.content.appendChild(rawFormatsEl);
 
+    // Add dedication
+    var dedicationText = this.node.document.get('dedication-text');
+    var dedicationEl = $$('div.dedication', {
+      html: '<em>'+ dedicationText.content + '</em>'
+    });
+    this.content.appendChild(dedicationEl);
+
     return this;
   }
 };

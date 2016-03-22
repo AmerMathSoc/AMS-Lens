@@ -36,6 +36,12 @@
   display:block;
   font-size: 15px;
 }
+
+.dedication  {
+  margin-top: 20px;
+  color: #666;
+}
+
 /*HACK, cf. https://github.com/AmerMathSoc/AMS-Lens/issues/36*/
 .formula + .formula {
   margin-top: -50px;
