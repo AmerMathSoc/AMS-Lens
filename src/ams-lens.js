@@ -14,8 +14,9 @@ var amsNodes = require("./nodes");
 MathConverter.prototype.extractNotes = function(state, article){
   var doc = state.doc;
   var nodes = [];
-  var dedication = article.querySelectorAll("notes[notes-type='dedication']")[0].textContent;
-  if (dedication.length > 0){
+  var dedications = article.querySelectorAll("notes[notes-type='dedication']");
+  if (dedications.length > 0){
+    var dedicationText = dedications[0].textContent;
     var p1 = {
         "type" : "paragraph",
         "id" : "dedication",
@@ -24,7 +25,7 @@ MathConverter.prototype.extractNotes = function(state, article){
     var text1 = {
       "type" : "text",
       "id" : "dedication-text",
-      "content" : dedication
+      "content" : dedicationText
     };
     p1.children.push(text1.id);
     doc.create(p1);
