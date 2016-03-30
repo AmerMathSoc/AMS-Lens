@@ -19,6 +19,16 @@ window.MathJax = {
           script.src = 'lens.js';
           document.getElementsByTagName('head')[0].appendChild(script);
           MathJax.Hub.Register.MessageHook("End Process", function (message) {
+            // HACK remove empty References headings in TOC and Content Panel, cf. https://github.com/AmerMathSoc/AMS-Lens/issues/49
+            var headings = document.getElementsByClassName("level-1");
+            for (var i = 0; i < headings.length; i++){
+              var heading = headings[i];
+              if (heading.innerText.trim() === "References"){
+                console.log("HACK for issue #49: removing 'References' heading:");
+                console.log(heading);
+                heading.parentNode.removeChild(heading);
+              }
+            }
             //HACK clean up bad Lens nodes; cf. https://github.com/AmerMathSoc/AMS-Lens/issues/37
             var nodes = document.querySelectorAll(".paragraph > .content > .text > .content");
             for (var i = 0; i < nodes.length; i++){
