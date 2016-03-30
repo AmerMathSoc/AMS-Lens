@@ -118,6 +118,16 @@ PublicationInfoView.Prototype = function() {
     // ----------------
 
     var articleInfo = this.node.getArticleInfo();
+
+    // Remove Dedication children, cf. https://github.com/AmerMathSoc/AMS-Lens/issues/45
+    var ch = articleInfo.children;
+    var i = ch.indexOf("dedication");
+    if(i != -1) {
+      ch.splice(i, 1); // remove dedication
+      ch.splice(i, 1); // remove the dedication-text as well
+    }
+    articleInfo.children = ch;
+
     var articleInfoView = this.viewFactory.createView(articleInfo);
     var articleInfoViewEl = articleInfoView.render().el;
 
