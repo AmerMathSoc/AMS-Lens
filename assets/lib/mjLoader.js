@@ -23,7 +23,7 @@ window.MathJax = {
             var headings = document.getElementsByClassName("level-1");
             for (var i = 0; i < headings.length; i++){
               var heading = headings[i];
-              if (heading.innerText.trim() === "References"){
+              if (heading.textContent.trim() === "References"){
                 console.log("HACK for issue #49: hiding 'References' heading:");
                 console.log(heading);
                 heading.style.visibility = "hidden";
