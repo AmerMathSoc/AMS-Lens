@@ -23,7 +23,8 @@ PublicationInfo.type = {
     "links": ["array", "objects"],
     "doi": "string",
     "related_article": "string",
-    "article_info": "paragraph"
+    "article_info": "paragraph",
+    "funding_info": ["array","string"]
   }
 };
 
@@ -46,7 +47,8 @@ PublicationInfo.description = {
     "research_organisms": "Research Organisms",
     "subjects": "Article Subjects",
     "doi": "Article DOI",
-    "related_article": "DOI of related article if there is any"
+    "related_article": "DOI of related article if there is any",
+    "funding_info": "Unstructured funding information"
   }
 };
 
