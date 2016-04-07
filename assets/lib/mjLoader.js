@@ -24,9 +24,9 @@ window.MathJax = {
             for (var i = 0; i < headings.length; i++){
               var heading = headings[i];
               if (heading.innerText.trim() === "References"){
-                console.log("HACK for issue #49: removing 'References' heading:");
+                console.log("HACK for issue #49: hiding 'References' heading:");
                 console.log(heading);
-                heading.parentNode.removeChild(heading);
+                heading.style.visibility = "hidden";
               }
             }
             //HACK clean up bad Lens nodes; cf. https://github.com/AmerMathSoc/AMS-Lens/issues/37
