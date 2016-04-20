@@ -77,6 +77,21 @@ PublicationInfoView.Prototype = function() {
       metaData.appendChild(keywordsEl);
     }
 
+    // Funding information
+    //
+
+    if (this.node.funding_info && this.node.funding_info.length > 0) {
+      var fundingEl = $$('.funding.container', {
+        children: [
+          $$('div.label', {text: "Funding"}),
+          $$('div.value', {
+            text: this.node.funding_info.join('. ') + '.'
+          })
+        ]
+      });
+      metaData.appendChild(fundingEl);
+    }
+
     // DOI
     //
 
