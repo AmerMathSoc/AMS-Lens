@@ -25,7 +25,7 @@
     "underscore": "1.8.x",
     "express": "3.3.x",
     "ejs": "*",
-    "lens": "elifesciences/lens.git#fda704f12ed6128b0e310162a4134645857c756b"
+    "lens": "elifesciences/lens.git#40e05c3ff1fd268c7305a8d2a240032de0a1d7c9"
   },
   "devDependencies": {
     "browserify": "substance/node-browserify#d3caeb6dcdaa97a258d099c7231a57f0f60ec876",
