@@ -27,6 +27,8 @@ PublicationInfoView.Prototype = function() {
 
     NodeView.prototype.render.call(this);
 
+    var i, valEl;
+
     // Display article meta information
     // ----------------
 
@@ -66,14 +68,19 @@ PublicationInfoView.Prototype = function() {
     //
 
     if (this.node.keywords && this.node.keywords.length > 0) {
-      var keywordsEl = $$('.keywords.container', {
-        children: [
-          $$('div.label', {text: "Keywords"}),
-          $$('div.value', {
-            text: this.node.keywords.join(', ')
-          })
-        ]
-      });
+      var keywords = this.node.keywords;
+      var keywordsEl = $$('.keywords.container');
+      keywordsEl.appendChild(
+        $$('div.label', {text: "Keywords"})
+      );
+      var valEl = $$('div.value');
+      for (i = 0; i < keywords.length; i++) {
+        var keywordEl = $$('span');
+        this.renderAnnotatedText(['publication_info', 'keywords', i], keywordEl);
+        keywordEl.appendChild($$('.'));
+        valEl.appendChild(keywordEl);
+      }
+      keywordsEl.appendChild(valEl);
       metaData.appendChild(keywordsEl);
     }
 
@@ -81,14 +88,18 @@ PublicationInfoView.Prototype = function() {
     //
 
     if (this.node.funding_info && this.node.funding_info.length > 0) {
-      var fundingEl = $$('.funding.container', {
-        children: [
-          $$('div.label', {text: "Funding"}),
-          $$('div.value', {
-            text: this.node.funding_info.join('. ') + '.'
-          })
-        ]
-      });
+      var fundingEl = $$('.funding.container');
+      fundingEl.appendChild(
+        $$('div.label', {text: "Funding"})
+      );
+      var valEl = $$('div.value');
+      for (var i = 0; i < this.node.funding_info.length; i++) {
+        var fundingInfoEl = $$('span');
+        this.renderAnnotatedText(['publication_info', 'funding_info', i], fundingInfoEl);
+        fundingInfoEl.appendChild($$('.'));
+        valEl.appendChild(fundingInfoEl);
+      }
+      fundingEl.appendChild(valEl);
       metaData.appendChild(fundingEl);
     }
 
