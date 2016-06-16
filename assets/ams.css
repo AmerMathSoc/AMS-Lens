@@ -5,6 +5,10 @@
   font-size: 13px;
 }
 
+.footnote-reference.sm-generated {
+  display: none;
+}
+
 /* Cover Node */
 
 .lens-article .content-node.cover .title {
