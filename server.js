@@ -65,8 +65,8 @@ app.use(express.static(path.join(__dirname, 'assets')));
 
 app.use(app.router);
 
-http.createServer(app).listen(port, function(){
+http.createServer(app).listen(port, function() {
   console.log("Lens running on port " + port);
   console.log("http://127.0.0.1:"+port+"/");
-  console.log("To open a local example file goto http://127.0.0.1:"+port+"?url=data/ams/bproc10/bproc10.xml");
+  console.log("To open a local example file goto http://127.0.0.1:"+port+"?url=PATH_TO_FILE");
 });
