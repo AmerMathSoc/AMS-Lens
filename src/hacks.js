@@ -29,6 +29,7 @@ var hacks = function() {
           formula.style["padding-top"] = "0px";
           formula.previousSibling.style["padding-bottom"] = "0px";
       }
+      // Start Zoom
       scaleZoom();
     }
     var MutationObserver = (function() {

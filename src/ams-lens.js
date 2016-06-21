@@ -10,7 +10,6 @@ var MathNodes = LensMath.MathNodes;
 var panels = Lens.getDefaultPanels();
 var InfoPanel = require("./info_panel");
 var amsNodes = require("./nodes");
-// var ScaleZoom = require("./scaleZoom");
 var hacks = require("./hacks"); hacks();
 
 MathConverter.prototype.extractNotes = function(state, article){
@@ -201,8 +200,6 @@ AMSLens.Prototype = function() {
     var workflows = Lens.getDefaultWorkflows();
     workflows.push(new LensMath.ToggleFormula());
     workflows.push(new LensMath.ToggleMathEnvironment());
-    // workflows.push(new LensMath.ZoomFormula());
-    // workflows.push(new ScaleZoom());
     return workflows;
   };
 

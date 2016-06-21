@@ -1,11 +1,6 @@
 var scaleMath = function() {
   var dispFormulas = document.getElementsByClassName("MJXc-display");
   if (dispFormulas) {
-    // caculate relative size of indentation
-    // var contentTest = document.getElementsByClassName("MJXc-display")[0];
-    // var nodesWidth = contentTest.offsetWidth;
-    // var mathIndent = MathJax.Hub.config.displayIndent; //assuming indent is in px's
-    // var mathIndentValue = mathIndent.substring(0,mathIndent.length - 2);
     for (var i = 0; i < dispFormulas.length; i++) {
       var dispFormula = dispFormulas[i];
       var child = dispFormula.firstChild;
@@ -18,7 +13,6 @@ var scaleMath = function() {
         var height = window.getComputedStyle(dispFormula).height;
         dispFormula.setAttribute("data-scale-height-org", height);
       }
-      // TODO store scale as data-* and get oldScale from there
       var oldScale = dispFormula.getAttribute("data-scale-scale") || "scale(1.00)";
       var rootWidth = dispFormula.offsetWidth;
       var childWidth = child.offsetWidth;
@@ -97,26 +91,6 @@ var scaleZoom = function() {
     clearTimeout(timeout);
     timeout = setTimeout(scaleMath, delay);
   });
-
-
-  //HACK clean up bad Lens nodes; cf. https://github.com/AmerMathSoc/AMS-Lens/issues/37
-  var nodes = document.querySelectorAll(".paragraph > .content > .text > .content");
-  for (var i = 0; i < nodes.length; i++){
-    node = nodes[i];
-    if(node.innerHTML.trim().length === 0){
-      console.log(node);
-       var parent = node.parentNode.parentNode.parentNode;
-       parent.parentNode.removeChild(parent);
-     }
-  }
-  // HACK remove padding of formulas following formulas
-  var formulas = document.querySelectorAll(".document .formula + .formula");
-  for (var i = 0; i < formulas.length; i++){
-    console.log(formula);
-    var formula = formulas[i];
-    formula.style["padding-top"]= "0px";
-    formula.previousSibling.style["padding-bottom"]= "0px";
-  }
 
 };
 
