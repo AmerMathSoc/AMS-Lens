@@ -58,6 +58,7 @@
 .mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
 .MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
 .mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
+.mjx-full-width {display: table-cell; width: 10000em}
 .mjx-math {display: inline-block; border-collapse: separate; border-spacing: 0}
 .mjx-math * {display: inline-block; text-align: left}
 .mjx-numerator {display: block; text-align: center}
@@ -84,12 +85,12 @@
 .mjx-mtr {display: table-row}
 .mjx-mlabeledtr {display: table-row}
 .mjx-mtd {display: table-cell; text-align: center}
-.mjx-label {display: block}
+.mjx-label {display: table-row}
 .mjx-box {display: inline-block}
 .mjx-block {display: block}
-.mjx-span {display: span}
+.mjx-span {display: inline}
 .mjx-char {display: block; white-space: pre}
-.mjx-itable {display: inline-table}
+.mjx-itable {display: inline-table; width: auto}
 .mjx-row {display: table-row}
 .mjx-cell {display: table-cell}
 .mjx-table {display: table; width: 100%}
@@ -100,6 +101,7 @@
 .MJXc-space2 {margin-left: .222em}
 .MJXc-space3 {margin-left: .278em}
 .mjx-ex-box-test {position: absolute; width: 1px; height: 60ex}
+.mjx-line-box-test {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
 .MJXc-TeX-unknown-R {font-family: monospace; font-style: normal; font-weight: normal}
 .MJXc-TeX-unknown-I {font-family: monospace; font-style: italic; font-weight: normal}
 .MJXc-TeX-unknown-B {font-family: monospace; font-style: normal; font-weight: bold}
